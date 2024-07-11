@@ -4,6 +4,7 @@ from PPlay.sprite import *
 from PPlay.keyboard import *
 from PPlay.mouse import *
 import main_menu
+import game_menu
 
 def main(game_window, game_background, game_keyboard, game_mouse):
     play_title = Sprite("./src/assets/play_title.png")
@@ -160,7 +161,7 @@ def main(game_window, game_background, game_keyboard, game_mouse):
             run.hide()
             run_selected.unhide()
             if(game_mouse.is_button_pressed(1)):
-                pass
+                game_menu.main(game_window, game_keyboard, game_mouse, difficulty_value, game_mode_value)
 
         game_window.update()
 
