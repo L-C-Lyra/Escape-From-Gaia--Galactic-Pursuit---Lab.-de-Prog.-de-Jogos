@@ -7,7 +7,7 @@ from PPlay.mouse import *
 import main_menu
 
 def main():
-    game_window = Window(1024, 1024)
+    game_window = Window(960, 960)
 
     game_background = GameImage("./src/assets/game_background.png")
 

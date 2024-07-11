@@ -8,6 +8,8 @@ import main_menu
 import play_menu
 
 def main(game_window, game_keyboard, game_mouse, difficulty_value, game_mode_value):
+    pygame.init()
+    
     game_background = GameImage("./src/assets/game_menu/game_background.png")
 
     nova_ryder = Sprite("./src/assets/game_menu/nova_ryder.png")
@@ -18,7 +20,7 @@ def main(game_window, game_keyboard, game_mouse, difficulty_value, game_mode_val
 
     while True:
         if(game_keyboard.key_pressed("ESC")):
-            game_window.close()
+            pass
         
         game_background.draw()
 
