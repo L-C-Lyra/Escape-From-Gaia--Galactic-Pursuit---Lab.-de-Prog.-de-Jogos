@@ -32,7 +32,7 @@ def main(game_window, game_keyboard, game_mouse, difficulty_value, game_mode_val
                 nova_ryder.x += vel_x * game_window.delta_time()
         if(nova_ryder.y > 0):
             if(game_keyboard.key_pressed("UP") or game_keyboard.key_pressed("W")):
-                nova_ryder.y -= vel_y * game_window.delta_time()~
+                nova_ryder.y -= vel_y * game_window.delta_time()
         if(nova_ryder.y < ((game_window.height - nova_ryder.height) / 2)):
             if(game_keyboard.key_pressed("DOWN") or game_keyboard.key_pressed("S")):
                 nova_ryder.y += vel_y * game_window.delta_time()
